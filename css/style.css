@@ -1,0 +1,178 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    padding:20px;
+}
+
+.app{
+    max-width:500px;
+    margin:auto;
+}
+
+.balance-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#balance{
+    font-size:32px;
+    font-weight:bold;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-bottom:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#incomeBtn{
+    background:#22c55e;
+    color:white;
+}
+
+#expenseBtn{
+    background:#ef4444;
+    color:white;
+}
+.history-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+.transaction{
+    display:flex;
+    justify-content:space-between;
+    padding:12px;
+    margin-top:10px;
+    border-radius:10px;
+    background:#f4f4f4;
+}
+.transaction button{
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-size:18px;
+}
+.income{
+    border-left:5px solid #22c55e;
+}
+
+.expense{
+    border-left:5px solid #ef4444;
+}
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .balance-card,
+.dark .history-card{
+    background:#1e1e1e;
+}
+
+.dark .transaction{
+    background:#2b2b2b;
+}
+
+#themeBtn{
+    background:#333;
+    color:white;
+}
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:white;
+    width:350px;
+    padding:20px;
+    border-radius:20px;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.modal-content input,
+.modal-content select{
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+
+.dark .modal-content{
+    background:#1e1e1e;
+}
+.transaction button{
+    background:none;
+    border:none;
+    cursor:pointer;
+    width:auto;
+    font-size:18px;
+}
+.transaction button{
+    width:auto;
+    margin-left:5px;
+}
+
+.transaction{
+    align-items:center;
+}
+.stats-card{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.stat{
+    flex:1;
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
+    background:white;
+}
+
+.income-stat{
+    border-left:5px solid #22c55e;
+}
+
+.expense-stat{
+    border-left:5px solid #ef4444;
+}
+
+.dark .stat{
+    background:#1e1e1e;
+}
+.report-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.dark .report-card{
+    background:#1e1e1e;
+}
+
+#reportResult{
+    margin-top:15px;
+}
+#categoryReport{
+    margin-top:20px;
+    padding-top:15px;
+    border-top:1px solid #ddd;
+}

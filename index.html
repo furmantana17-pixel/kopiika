@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Копійка 2.1</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <h1>Копійка 2.1</h1>
+
+    <div class="balance-card">
+        <h2>Баланс</h2>
+        <p id="balance">0 грн</p>
+    </div>
+    <div class="stats-card">
+
+    <div class="stat income-stat">
+        <h3>Доходи</h3>
+        <p id="incomeTotal">0 грн</p>
+    </div>
+
+    <div class="stat expense-stat">
+        <h3>Витрати</h3>
+        <p id="expenseTotal">0 грн</p>
+    </div>
+
+</div>
+    <button id="themeBtn">
+    🌙 Темна тема
+</button>
+
+    <button id="incomeBtn">➕ Дохід</button>
+
+    <button id="expenseBtn">➖ Витрата</button>
+
+    <div class="history-card">
+        <h2>Останні операції</h2>
+        <div id="transactions"></div>
+    </div>
+<div class="report-card">
+
+    <h3>Звіт</h3>
+
+    <input
+        type="month"
+        id="reportMonth">
+
+    <button id="showReport">
+        Показати звіт
+    </button>
+
+    <div id="reportResult"></div>
+
+</div>
+</div>
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <h2 id="modalTitle">Операція</h2>
+
+        <select id="category">
+            <option>☕ Кава</option>
+            <option>🛒 Продукти</option>
+            <option>👕 Одяг</option>
+            <option>🍽️ Кафе</option>
+            <option>🎨 Хобі</option>
+            <option>✈️ Відпочинок</option>
+            <option>🚗 Авто</option>
+            <option>🏠 Комунальні</option>
+            <option>✏️ Інше</option>
+        </select>
+
+        <input
+    type="date"
+    id="date">
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Сума">
+
+        <input
+            type="text"
+            id="comment"
+            placeholder="Коментар">
+
+        <button id="saveOperation">
+            Зберегти
+        </button>
+
+        <button id="closeModal">
+            Закрити
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/transactions.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
